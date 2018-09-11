@@ -213,6 +213,9 @@ input {
     #date {
         font-size: 25px;
     }
+    .pagetitle {
+    margin-top: 50px;
+    }
 }
 @media only screen and (max-width: 375px) {
     #brynnandkaden {
