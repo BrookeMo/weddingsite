@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Melinda Script';
+    src: url('./fonts/MelindaScript.eot');
+    src: url('./fonts/MelindaScript.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/MelindaScript.woff2') format('woff2'),
+        url('./fonts/MelindaScript.woff') format('woff'),
+        url('./fonts/MelindaScript.ttf') format('truetype'),
+        url('./fonts/MelindaScript.svg#MelindaScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('./fonts/CaviarDreams.eot');
+    src: url('./fonts/CaviarDreams.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/CaviarDreams.woff2') format('woff2'),
+        url('./fonts/CaviarDreams.woff') format('woff'),
+        url('./fonts/CaviarDreams.ttf') format('truetype'),
+        url('./fonts/CaviarDreams.svg#CaviarDreams') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #F5F5F5;
+}
+.pagetitle {
+    position: relative;
+    width: 1230px;
+    margin: auto;
+}
+#brynnandkaden {
+    font-family: 'Melinda Script', cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#date {
+    font-family: 'Melinda Script', cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.titleleaves {
+    position: absolute;
+    height: 180px;
+}
+#leafgreenright {
+    right: 90px;
+    top: 20px;
+}
+#leafgreenleft {
+    left: 90px;
+    top: 20px;
+}
+.banner {
+    width: 100%;
+    height: 75px;
+    background-color: #979797;
+}
+#bannertext {
+    font-family: 'Caviar Dreams';
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 11px;
+}
+.pagecontent {
+    position: relative;
+    margin-top: 30px;
+}
+.contentleaves {
+    position: absolute;
+    height: 375px;
+}
+#leafblackright {
+    top: 10px;
+    right: 45px;
+}
+#leafblackleft {
+    top: 10px;
+    left: 45px;
+}
+.formbox {
+    background-color: white;
+    border: solid #A3A0A1 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+}
+h6 {
+    font-family: 'Caviar Dreams';
+    font-weight: normal;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0;
+}
+.namediv {
+    width: 45%;
+    display: inline-block;
+    padding: 20px;
+}
+.nameinput {
+    width: 90%;
+}
+.addressdiv {
+    display: inline-block;
+    padding: 20px;
+    padding-top: 0;
+    width: 90%;
+}
+input {
+    box-sizing: border-box;
+    border: 1px solid #A3A0A1;
+    background-color: #F5F5F5;
+    padding: 10px;
+    font-family: 'Caviar Dreams';
+    font-size: 13px;
+    margin-top: 10px;
+    width: 100%;
+}
+#submit {
+    background-color: #7D977B;
+    color: #F5F5F5;
+    width: 30%;
+    border-radius: 33.5px;
+    font-size: 20px;
+    margin: auto;
+    display: block;
+}
