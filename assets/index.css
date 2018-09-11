@@ -214,7 +214,7 @@ input {
         font-size: 25px;
     }
     .pagetitle {
-    margin-top: 50px;
+    margin-top: 100px;
     }
 }
 @media only screen and (max-width: 375px) {
