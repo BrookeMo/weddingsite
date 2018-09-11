@@ -213,8 +213,8 @@ input {
     #date {
         font-size: 25px;
     }
-    .pagetitle {
-    margin-top: 100px;
+    .pagecontent {
+        margin-top: 0px;
     }
 }
 @media only screen and (max-width: 375px) {
