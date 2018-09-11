@@ -26,7 +26,6 @@ body {
 }
 .pagetitle {
     position: relative;
-    width: 1230px;
     margin: auto;
 }
 #brynnandkaden {
@@ -134,4 +133,92 @@ input {
     font-size: 20px;
     margin: auto;
     display: block;
+}
+.content {
+    position: absolute; 
+    top: 48%; 
+    transform: translateY(-50%); 
+    width: 100%;
+  }
+@media only screen and (max-width: 1305px) {
+    .namediv {
+        width: 100%;
+        padding-top: 0;
+    }
+    #submit {
+        width: 40%;
+    }
+    #brynnandkaden {
+        font-size: 60px;
+    }
+    .titleleaves {
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .namediv {
+        width: 100%;
+        padding-top: 0;
+    }
+    #submit {
+        width: 90%;
+    }
+    #brynnandkaden {
+        font-size: 40px;
+    }
+    .titleleaves {
+        height: 120px;
+    }
+    #leafblackright {
+        top: 80px;
+    }
+    #leafblackleft {
+        top: 80px;
+    }
+}
+@media only screen and (max-width: 615px) {
+    #leafgreenright {
+        top: 0;
+        right: 10px;
+    }
+    #leafgreenleft {
+        top: 0;
+        left: 10px;
+    }
+    .contentleaves {
+        display: none;
+    }
+    .formbox {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .titleleaves {
+        height: 140px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    #bannertext {
+        font-size: 20px;
+        padding-top: 8px;
+    }
+    .banner {
+        height: 40px;
+    }
+    .titleleaves {
+        height: 100px;
+    }
+    #brynnandkaden {
+        font-size: 30px;
+    }
+    #date {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #brynnandkaden {
+        font-size: 25px;
+    }    
+    #submit {
+        font-size: 15px;
+    }
 }
