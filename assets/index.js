@@ -1,30 +1,12 @@
-$(document).ready(function() {
-    $("#submit").click(function(){
-        var jsonData = {};
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA2__h0mVns8BDI4Y2aTce9zfxoc5HXWG4",
+    authDomain: "brynnandkaden.firebaseapp.com",
+    databaseURL: "https://brynnandkaden.firebaseio.com",
+    projectId: "brynnandkaden",
+    storageBucket: "brynnandkaden.appspot.com",
+    messagingSenderId: "382596678014"
+  };
+  firebase.initializeApp(config);
 
-   var formData = $("#myform").serializeArray();
-  // console.log(formData);
-
-   $.each(formData, function() {
-        if (jsonData[this.name]) {
-           if (!jsonData[this.name].push) {
-               jsonData[this.name] = [jsonData[this.name]];
-           }
-           jsonData[this.name].push(this.value || '');
-       } else {
-           jsonData[this.name] = this.value || '';
-       }
-
-
-   });
-   console.log(jsonData);
-    $.ajax(
-    {
-        url : "action.php",
-        type: "POST",
-        data : jsonData,
-
-    });
-    e.preventDefault(); 
-    });
-});
+  
