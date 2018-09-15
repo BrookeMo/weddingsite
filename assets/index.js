@@ -9,4 +9,46 @@
   };
   firebase.initializeApp(config);
 
-  
+  // Set up Firebase Variables
+  var database = firebase.database();
+
+  // Announcements Code
+  var announcements = database.ref('announcements');
+  var childNumber = 0
+  console.log(childNumber)
+  const submit = $("#submit");
+
+  // Create new Contact Function
+  function saveContact(firstname, lastname, email, address) {
+    var firstname = $("#firstname").val().trim();
+    var lastname = $("#lastname").val().trim();
+    var email = $("#email").val().trim();
+    var address = $("#address").val().trim();
+    if (firstname == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    else if (lastname == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    else {
+        childNumber ++;
+        var childName = childNumber + " " + firstname + " " + lastname;
+        announcements.child(childName).set({
+            email: email,
+            address: address 
+        });
+        console.log(childNumber);
+    }
+}
+  // Submit form to Database function
+  function submitForm(e) {
+    e.preventDefault();
+    saveContact(firstname, lastname, email, address);
+  }
+
+  // On click function to submit
+  $(submit).click(submitForm);
+
+
