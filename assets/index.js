@@ -14,8 +14,8 @@
 
   // Announcements Code
   var announcements = database.ref('announcements');
-  var childNumber = 0
-  console.log(childNumber)
+  var childNumber = Math.floor(Math.random() * 9);
+  console.log(childNumber);
   const submit = $("#submit");
 
   // Create new Contact Function
@@ -33,7 +33,6 @@
         return false;
     }
     else {
-        childNumber ++;
         var childName = childNumber + " " + firstname + " " + lastname;
         announcements.child(childName).set({
             email: email,
@@ -46,6 +45,11 @@
   function submitForm(e) {
     e.preventDefault();
     saveContact(firstname, lastname, email, address);
+    alert("Thank you! You've successfully submitted your information. You can expect an wedding announcement soon!");
+    $("#firstname").val('');
+    $("#lastname").val('');
+    $("#email").val('');
+    $("#address").val('');
   }
 
   // On click function to submit
