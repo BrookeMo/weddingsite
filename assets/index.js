@@ -18,8 +18,9 @@
   console.log(childNumber);
   const submit = $("#submit");
 
-  // Create new Contact Function
-  function saveContact(firstname, lastname, email, address) {
+  // Submit form to Database function
+  function submitForm(e) {
+    e.preventDefault();
     var firstname = $("#firstname").val().trim();
     var lastname = $("#lastname").val().trim();
     var email = $("#email").val().trim();
@@ -38,19 +39,13 @@
             email: email,
             address: address 
         });
-        console.log(childNumber);
+        alert("Thank you! You've successfully submitted your information. You can expect an wedding announcement soon!");
+        $("#firstname").val('');
+        $("#lastname").val('');
+        $("#email").val('');
+        $("#address").val('');
     }
-}
-  // Submit form to Database function
-  function submitForm(e) {
-    e.preventDefault();
-    saveContact(firstname, lastname, email, address);
-    alert("Thank you! You've successfully submitted your information. You can expect an wedding announcement soon!");
-    $("#firstname").val('');
-    $("#lastname").val('');
-    $("#email").val('');
-    $("#address").val('');
-  }
+};
 
   // On click function to submit
   $(submit).click(submitForm);
