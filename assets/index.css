@@ -140,15 +140,6 @@ input {
     transform: translateY(-50%); 
     width: 100%;
 }
-#codetag {
-    font-family: 'Caviar Dreams';
-    font-size: 10px;
-    display: block;
-    margin: auto;
-    color: black;
-    position: absolute;
-    bottom: 0;
-}
 @media only screen and (max-width: 1305px) {
     .namediv {
         width: 100%;
