@@ -83,12 +83,9 @@ h3 {
 }
 .photobanner {
     height: 233px;
-    width: 7550px;
+    width: 6985px;
     margin-bottom: 10px;
     margin-top: 50px;
-    /* border-top: solid white 5px;
-    border-bottom: solid white 5px;
-    background-color: white; */
 }
 .photobanner img {
     -webkit-transition: all 0.5s ease;
@@ -124,7 +121,7 @@ h3 {
        margin-left: 0px;
     }
     100% {
-       margin-left: -7550px;
+       margin-left: -6985px;
     } 
 }  
 @-moz-keyframes bannermove {
@@ -132,7 +129,7 @@ h3 {
       margin-left: 0px;
     }
     100% {
-      margin-left: -7550px;
+      margin-left: -6985px;
     } 
 }  
 @-webkit-keyframes bannermove {
@@ -140,7 +137,7 @@ h3 {
       margin-left: 0px;
     }
     100% {
-      margin-left: -7550px;
+      margin-left: -6985px;
     }
 } 
 @-ms-keyframes bannermove {
@@ -148,7 +145,7 @@ h3 {
       margin-left: 0px;
     }
     100% {
-      margin-left: -7550px;
+      margin-left: -6985px;
     }
 }  
 @-o-keyframes bannermove {
@@ -156,7 +153,7 @@ h3 {
       margin-left: 0px;
     }
     100% {
-      margin-left: -7550px;
+      margin-left: -6985px;
     }
 }
 .formbox {
@@ -267,6 +264,20 @@ input {
     }
     .formbox {
         padding-left: 0px;
+        padding-top: 10px;
+    }
+    .namediv {
+        padding-bottom: 5px;
+    }
+    .addressdiv {
+        padding-bottom: 5px;
+    }
+    input {
+        margin-top: 5px;
+    }
+    #submit {
+        margin-left: 23px;
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 375px) {  
