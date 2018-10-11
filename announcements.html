@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <title>Brynn and Kaden | Announcements</title>
+</head>
+
+<body>
+    <div class="content">
+        <img id="decal" src="./assets/images/weddingdecal.svg">
+        <div class="title">
+            <h1>BRYNN MORTENSEN</h1>
+            <h3>AND</h3>
+            <h1>KADEN LARSEN</h1>
+        </div>
+        <p id="date">12.28.18</p>
+        <div class="formbox">
+            <form>
+                <div class="namediv">
+                    <h6 class="name">First Name:</h6>
+                    <br>
+                    <input id="firstname" required="required" class="nameinput" type="text" name="firstname">
+                </div>
+                <div id="lastnamediv" class="namediv">
+                    <h6 class="name">Last Name:</h6>
+                    <br>
+                    <input id="lastname" required="required" class="nameinput" type="text" name="lastname">
+                </div>
+                <div class="addressdiv">
+                    <h6>Email Address:</h6>
+                    <br>
+                    <input id="email" type="email" name="email">
+                </div>
+                <div class="addressdiv">
+                    <h6>Mailing Address:</h6>
+                    <br>
+                    <input id="address" type="text" name="address">
+                </div>
+                <input id="submit" type="submit" value="send me an announcement">
+            </form>
+        </div>
+    </div>
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>

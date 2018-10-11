@@ -40,7 +40,7 @@
             address: address 
         });
         alert("Thank you! You've successfully submitted your information. You can expect an wedding announcement soon!");
-        window.location.href = "http://www.brynnandkaden.tk";
+        window.location.href = "index.html";
     }
 };
 

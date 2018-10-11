@@ -1,127 +1,200 @@
 @font-face {
-    font-family: 'Melinda Script';
-    src: url('./fonts/MelindaScript.eot');
-    src: url('./fonts/MelindaScript.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/MelindaScript.woff2') format('woff2'),
-        url('./fonts/MelindaScript.woff') format('woff'),
-        url('./fonts/MelindaScript.ttf') format('truetype'),
-        url('./fonts/MelindaScript.svg#MelindaScript') format('svg');
+    font-family: 'Frontage';
+    src: url('./fonts/Frontage-Regular.eot');
+    src: url('./fonts/Frontage-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Frontage-Regular.woff2') format('woff2'),
+        url('./fonts/Frontage-Regular.woff') format('woff'),
+        url('./fonts/Frontage-Regular.ttf') format('truetype'),
+        url('./fonts/Frontage-Regular.svg#Frontage-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'Caviar Dreams';
-    src: url('./fonts/CaviarDreams.eot');
-    src: url('./fonts/CaviarDreams.eot?#iefix') format('embedded-opentype'),
-        url('./fonts/CaviarDreams.woff2') format('woff2'),
-        url('./fonts/CaviarDreams.woff') format('woff'),
-        url('./fonts/CaviarDreams.ttf') format('truetype'),
-        url('./fonts/CaviarDreams.svg#CaviarDreams') format('svg');
+    font-family: 'Mrs Eaves OT';
+    src: url('./fonts/MrsEavesOT-Roman.eot');
+    src: url('./fonts/MrsEavesOT-Roman.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/MrsEavesOT-Roman.woff2') format('woff2'),
+        url('./fonts/MrsEavesOT-Roman.woff') format('woff'),
+        url('./fonts/MrsEavesOT-Roman.ttf') format('truetype'),
+        url('./fonts/MrsEavesOT-Roman.svg#MrsEavesOT-Roman') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 body {
-    background-color: #F5F5F5;
+    background-image: url("./images/weddingbackground.png");
+    background-repeat: repeat;
     margin: 0;
 }
-.pagetitle {
-    position: relative;
-    margin: auto;
+.content {
+    overflow: hidden;
 }
-#brynnandkaden {
-    font-family: 'Melinda Script', cursive;
+#decal {
+    position: absolute;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 150px;
+}
+.title {
+    margin-top: 150px;
+}
+h1, h3 {
+    font-family: 'Frontage';
     font-weight: normal;
+    color: white;
     text-align: center;
-    font-size: 80px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+}
+h1 {
+    font-size: 3em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h3 {
+    margin: 0;
 }
 #date {
-    font-family: 'Melinda Script', cursive;
+    font-family: 'Mrs Eaves OT';
     font-weight: normal;
+    color: white;
     text-align: center;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.titleleaves {
-    position: absolute;
-    height: 180px;
-}
-#leafgreenright {
-    right: 90px;
-    top: 20px;
-}
-#leafgreenleft {
-    left: 90px;
-    top: 20px;
 }
 .banner {
     width: 100%;
-    height: 75px;
-    background-color: #979797;
+    height: 35px;
+    background-color: #5F4F45;
 }
 #bannertext {
-    font-family: 'Caviar Dreams';
+    font-family: 'Mrs Eaves OT';
     color: white;
     text-align: center;
     font-weight: normal;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 11px;
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 2px;
 }
-.pagecontent {
-    position: relative;
-    margin-top: 30px;
+#bannerlink {
+    text-decoration: none;
 }
-.contentleaves {
-    position: absolute;
-    height: 375px;
+#bannerlink:hover {
+    text-decoration: underline;
+    color: white;
 }
-#leafblackright {
-    top: 10px;
-    right: 45px;
+.photobanner {
+    height: 233px;
+    width: 7550px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    /* border-top: solid white 5px;
+    border-bottom: solid white 5px;
+    background-color: white; */
 }
-#leafblackleft {
-    top: 10px;
-    left: 45px;
+.photobanner img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.photobanner img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+.slideshow {
+    height: 233px;
+}
+.first {
+    -webkit-animation: bannermove 200s linear infinite;
+       -moz-animation: bannermove 200s linear infinite;
+        -ms-animation: bannermove 200s linear infinite;
+         -o-animation: bannermove 200s linear infinite;
+            animation: bannermove 200s linear infinite;
+}
+@keyframes bannermove {
+    0% {
+       margin-left: 0px;
+    }
+    100% {
+       margin-left: -7550px;
+    } 
+}  
+@-moz-keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -7550px;
+    } 
+}  
+@-webkit-keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -7550px;
+    }
+} 
+@-ms-keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -7550px;
+    }
+}  
+@-o-keyframes bannermove {
+    0% {
+      margin-left: 0px;
+    }
+    100% {
+      margin-left: -7550px;
+    }
 }
 .formbox {
     background-color: white;
-    border: solid #A3A0A1 5px;
+    border: solid #7D977B 5px;
     margin-left: 200px;
     margin-right: 200px;
     padding: 20px;
 }
 h6 {
-    font-family: 'Caviar Dreams';
+    font-family: 'Mrs Eaves OT';
     font-weight: normal;
     font-size: 20px;
     display: inline-block;
     margin: 0;
+    color: #7D977B;
 }
 .namediv {
     width: 45%;
     display: inline-block;
     padding: 20px;
+    padding-top: 10px;
 }
 .nameinput {
-    width: 90%;
+    width: 100%;
 }
 .addressdiv {
     display: inline-block;
     padding: 20px;
     padding-top: 0;
-    width: 90%;
+    width: 94.5%;
 }
 input {
     box-sizing: border-box;
     border: 1px solid #A3A0A1;
     background-color: #F5F5F5;
     padding: 10px;
-    font-family: 'Caviar Dreams';
+    font-family: 'Mrs Eaves OT';
     font-size: 13px;
     margin-top: 10px;
     width: 100%;
@@ -134,95 +207,64 @@ input {
     font-size: 20px;
     margin: auto;
     display: block;
-}
-.content {
-    position: absolute; 
-    top: 48%; 
-    transform: translateY(-50%); 
-    width: 100%;
+    padding-bottom: 8px;
 }
 @media only screen and (max-width: 1305px) {
     .namediv {
-        width: 100%;
+        width: 94.5%;
+    }
+    #lastnamediv {
         padding-top: 0;
     }
     #submit {
-        width: 40%;
+        width: 55%;
     }
-    #brynnandkaden {
-        font-size: 60px;
+    #decal {
+        height: 122px;
     }
-    .titleleaves {
-        height: 150px;
+    .title {
+        margin-top: 130px;
     }
 }
-@media only screen and (max-width: 768px) {
-    .namediv {
-        width: 100%;
-        padding-top: 0;
+@media only screen and (max-width: 906px) {
+    #decal {
+        height: 100px;
     }
+    #submit {
+        font-size: 20px;
+    }
+    .formbox {
+        margin-left: 100px;
+        margin-right: 100px;
+}
+@media only screen and (max-width: 768px) {
     #submit {
         width: 90%;
     }
-    #brynnandkaden {
-        font-size: 40px;
-    }
-    .titleleaves {
-        height: 120px;
-    }
-    #leafblackright {
-        top: 80px;
-    }
-    #leafblackleft {
-        top: 80px;
-    }
 }
 @media only screen and (max-width: 615px) {
-    #leafgreenright {
-        top: 0;
-        right: 10px;
-    }
-    #leafgreenleft {
-        top: 0;
-        left: 10px;
-    }
-    .contentleaves {
-        display: none;
-    }
     .formbox {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .titleleaves {
-        height: 140px;
-    }
 }
 @media only screen and (max-width: 425px) {
-    #bannertext {
-        font-size: 20px;
-        padding-top: 8px;
+    #decal {
+        height: 50px;
     }
-    .banner {
-        height: 40px;
+    h1 {
+        font-size: 2em;
     }
-    .titleleaves {
-        height: 100px;
+    .title {
+        margin-top: 75px;
     }
-    #brynnandkaden {
-        font-size: 30px;
-    }
-    #date {
-        font-size: 25px;
-    }
-    .pagecontent {
-        margin-top: 5px;
+    .formbox {
+        padding-left: 0px;
     }
 }
-@media only screen and (max-width: 375px) {
-    #brynnandkaden {
-        font-size: 25px;
-    }    
+@media only screen and (max-width: 375px) {  
     #submit {
         font-size: 15px;
     }
+}
 }
