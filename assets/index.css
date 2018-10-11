@@ -208,6 +208,7 @@ input {
     margin: auto;
     display: block;
     padding-bottom: 8px;
+    -webkit-appearance: none;
 }
 @media only screen and (max-width: 1305px) {
     .namediv {
@@ -255,8 +256,14 @@ input {
     h1 {
         font-size: 2em;
     }
+    .atitle {
+        font-size: 1.5em;
+    }
     .title {
         margin-top: 75px;
+    }
+    #announcementstitle {
+        margin-top: 65px;
     }
     .formbox {
         padding-left: 0px;
