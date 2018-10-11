@@ -309,6 +309,9 @@ input {
     #phototag {
         margin-top: 0;
     }
+    #devtag {
+        bottom: 0;
+    }
 }
 @media only screen and (max-width: 375px) {  
     #submit {
