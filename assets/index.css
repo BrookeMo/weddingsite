@@ -288,6 +288,12 @@ input {
         margin-left: 23px;
         margin-top: 10px;
     }
+    .photobanner {
+        margin-bottom: 0;
+    }
+    #phototag {
+        margin-top: 0;
+    }
 }
 @media only screen and (max-width: 375px) {  
     #submit {
