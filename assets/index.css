@@ -83,7 +83,7 @@ h3 {
 }
 .photobanner {
     height: 233px;
-    width: 6985px;
+    width: 8635px;
     margin-bottom: 10px;
     margin-top: 50px;
 }
@@ -110,18 +110,18 @@ h3 {
     height: 233px;
 }
 .first {
-    -webkit-animation: bannermove 200s linear infinite;
-       -moz-animation: bannermove 200s linear infinite;
-        -ms-animation: bannermove 200s linear infinite;
-         -o-animation: bannermove 200s linear infinite;
-            animation: bannermove 200s linear infinite;
+    -webkit-animation: bannermove 133s linear infinite;
+       -moz-animation: bannermove 133s linear infinite;
+        -ms-animation: bannermove 133s linear infinite;
+         -o-animation: bannermove 133s linear infinite;
+            animation: bannermove 133s linear infinite;
 }
 @keyframes bannermove {
     0% {
        margin-left: 0px;
     }
     100% {
-       margin-left: -6985px;
+       margin-left: -6989px;
     } 
 }  
 @-moz-keyframes bannermove {
@@ -129,7 +129,7 @@ h3 {
       margin-left: 0px;
     }
     100% {
-      margin-left: -6985px;
+      margin-left: -6989px;
     } 
 }  
 @-webkit-keyframes bannermove {
@@ -137,7 +137,7 @@ h3 {
       margin-left: 0px;
     }
     100% {
-      margin-left: -6985px;
+      margin-left: -6989px;
     }
 } 
 @-ms-keyframes bannermove {
@@ -145,7 +145,7 @@ h3 {
       margin-left: 0px;
     }
     100% {
-      margin-left: -6985px;
+      margin-left: -6989px;
     }
 }  
 @-o-keyframes bannermove {
@@ -153,7 +153,7 @@ h3 {
       margin-left: 0px;
     }
     100% {
-      margin-left: -6985px;
+      margin-left: -6989px;
     }
 }
 .formbox {
